@@ -20,6 +20,7 @@ export function SideBar(props:SideBarProps) {
         <div className="buttons-container">
           {props.genres.map(genre => (
             <Button
+              key={String(genre.id)}
               id={String(genre.id)}
               title={genre.title}
               iconName={genre.name}
