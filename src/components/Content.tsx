@@ -26,6 +26,7 @@ export function Content(props:contentProps) {
             
             {props.movies.map(movie => (
               <MovieCard 
+                key={movie.Title}
                 title={movie.Title} 
                 poster={movie.Poster} 
                 runtime={movie.Runtime} 
